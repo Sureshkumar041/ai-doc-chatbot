@@ -1,0 +1,23 @@
+[project]
+name = "server"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "suresh",email = "sureshkumarbe04@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.163.2,<0.164.0)",
+    "uvicorn[standard] (>=0.54.0,<0.55.0)",
+    "pydantic-settings (>=2.16.3,<3.0.0)",
+    "python-multipart (>=0.0.34,<0.0.35)",
+    "sqlalchemy (>=2.1.9,<3.0.0)",
+    "alembic (>=1.20.1,<2.0.0)",
+    "psycopg[binary] (>=3.3.9,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
