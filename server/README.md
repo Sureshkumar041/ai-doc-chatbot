@@ -1,3 +1,4 @@
+```text
 ai-document-chatbot/
 │
 ├── backend/
@@ -53,3 +54,4 @@ ai-document-chatbot/
 ├── pyproject.toml
 ├── Dockerfile
 └── README.md
+```
