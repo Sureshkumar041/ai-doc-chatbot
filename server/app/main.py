@@ -6,6 +6,7 @@ from app.api.v1.router import api_router
 from app.core.config import settings
 from app.core.logging import setup_logging
 import logging
+from app.core.database import Base, engine
 
 setup_logging()
 
@@ -15,6 +16,9 @@ logging.info("AI Document Chatbot API started")
 # Load environment variables
 load_dotenv()
 
+
+# Create database tables
+Base.metadata.create_all(bind=engine)
 
 # Get host and port from .env
 HOST = os.getenv("HOST", "127.0.0.1")
